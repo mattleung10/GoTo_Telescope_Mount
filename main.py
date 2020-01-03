@@ -186,6 +186,7 @@ if __name__ == "__main__":
         except NameError:
             pass
     
+    #Markham, Ontario, Canada
     lat = 43.874168
     lon = -79.258743
     utc_offset = -5
