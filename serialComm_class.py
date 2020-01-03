@@ -18,7 +18,6 @@ class serialComm_class:
             return False
         
         #Open the port and go through the useless stuff in the beginning
-        #try:
         self.s.open()
         try:
             for i in range(0,50,1):
@@ -47,8 +46,8 @@ class serialComm_class:
         try:
             self.s.reset_input_buffer()
             #for safety, get rid of data that might be wrong
-            #for i in range(0,20,1):
-            #    data = self.s.readline()
+            for i in range(0,5,1):
+                data = self.s.readline()
             data = (self.s.readline())[:-2].decode('utf-8')
         except:
             self.s.close()
@@ -58,5 +57,3 @@ class serialComm_class:
     def closePort(self):
         self.s.close()
         return True
-
-        
