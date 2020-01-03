@@ -1,6 +1,11 @@
 # GoTo_Telescope_Mount
 
-A GoTo mount is a computerized telescope mount that can automatically point a telescope at a certain astronomical object. I made my own alt-azimuth mount controlled by a Raspberry Pi and Arduinos for my 4.5" Newtonian Telescope.
+A GoTo mount is a computerized telescope mount that can automatically point a telescope at a certain astronomical object. I made my own alt-azimuth mount controlled by a Raspberry Pi and Arduinos for my 4.5" Newtonian Telescope, shown in the GIF below.
+
+
+For more details about the project, please visit my website at https://mchleung.com/gotomount
+
+![](https://github.com/mattleung10/GoTo_Telescope_Mount/blob/master/images/GoToDemo_600.gif)
 
 ### Key Features
 -	Internal database of all Messier and NGC objects (scraped from the Strasbourg Astronomical Data Centre)
@@ -9,11 +14,12 @@ A GoTo mount is a computerized telescope mount that can automatically point a te
 -	Mount can be controlled from another device
 -	Entire mount can be powered by simply plugging it into the wall
 
-![](https://github.com/mattleung10/GoTo_Telescope_Mount/blob/master/images/GoToDemo_600.gif)
+### Project Layout
+![](https://github.com/mattleung10/GoTo_Telescope_Mount/blob/master/images/GoTo%20Mount%20Schematic%20Crop.png)
 
 ## To Use
 
-Run the ```main.py``` program.
+Run the ```main.py``` script.
 
 ### Libraries Used
 - astropy, for coordinate transformations and calculations
