@@ -5,7 +5,6 @@ from accel_class import accel_class
 from multiprocessing import Process
 import os
 import sys
-import time
 import math
 
 ###############################################################################
@@ -50,12 +49,6 @@ def clearScreen():
     else:
         os.system('clear')
     return True
-
-def animatedLoading():
-    for c in ['|', '/', '-', '\\']:
-        sys.stdout.write('\rLoading ' + c)
-        sys.stdout.flush()
-        time.sleep(0.1)
 
 ###############################################################################
 
